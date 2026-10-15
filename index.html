@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123c2b">
+  <title>Chamada para o Almoço | Dom Ungarelli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">DU</div>
+    <div>
+      <p class="eyebrow">DOM UNGARELLI</p>
+      <h1>Chamada para o almoço</h1>
+    </div>
+    <div class="live-pill"><span></span> Painel de chamada</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow light">ORGANIZAÇÃO • AGILIDADE • CUIDADO</p>
+        <h2>Está na hora<br>de almoçar!</h2>
+        <p>Selecione a sala e anuncie a chamada para o refeitório.</p>
+      </div>
+      <div class="hero-icon" aria-hidden="true">🍽️</div>
+    </section>
+
+    <section class="panel call-panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PAINEL PRINCIPAL</p>
+          <h2>Chamar uma sala</h2>
+        </div>
+        <span class="date-label" id="today"></span>
+      </div>
+
+      <label for="roomSelect">Selecione a sala</label>
+      <div class="call-controls">
+        <select id="roomSelect">
+          <option value="">Escolha uma sala...</option>
+          <option>Maternal I</option>
+          <option>Maternal II</option>
+          <option>Infantil I</option>
+          <option>Infantil II</option>
+          <option>1º Ano</option>
+          <option>2º Ano</option>
+          <option>3º Ano</option>
+          <option>4º Ano</option>
+          <option>5º Ano</option>
+          <option>6º Ano</option>
+          <option>7º Ano</option>
+          <option>8º Ano</option>
+          <option>9º Ano</option>
+        </select>
+        <button class="btn-primary" id="callBtn">📣 Chamar sala</button>
+      </div>
+
+      <div class="announcement" id="announcement" aria-live="polite">
+        <div class="announcement-icon">🔔</div>
+        <div>
+          <p class="announcement-label">ÚLTIMA CHAMADA</p>
+          <h3 id="announcementTitle">Nenhuma sala chamada ainda</h3>
+          <p id="announcementText">Escolha uma sala acima para começar.</p>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button class="btn-secondary" id="repeatBtn" disabled>🔁 Repetir chamada</button>
+        <button class="btn-outline" id="clearBtn">Limpar painel</button>
+      </div>
+      <p class="hint">A chamada por voz usa a função de síntese de voz do navegador, se disponível.</p>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ACOMPANHAMENTO</p>
+          <h2>Salas chamadas</h2>
+        </div>
+        <span class="counter" id="counter">0 chamadas</span>
+      </div>
+      <div class="progress-track"><div id="progressBar"></div></div>
+      <div class="room-grid" id="roomGrid"></div>
+      <div class="list-actions">
+        <button class="btn-outline" id="resetBtn">↺ Reiniciar lista</button>
+        <button class="btn-secondary" id="printBtn">🖨️ Imprimir relatório</button>
+      </div>
+    </section>
+
+    <footer>Dom Ungarelli • Painel demonstrativo de chamada das salas para o almoço</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

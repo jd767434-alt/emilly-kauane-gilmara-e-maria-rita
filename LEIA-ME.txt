@@ -1,0 +1,16 @@
+CHAMADA PARA O ALMOÇO — DOM UNGARELLI
+
+Como abrir:
+1. Extraia o arquivo ZIP para uma pasta.
+2. Abra a pasta no Visual Studio Code.
+3. Abra o arquivo index.html no navegador (ou use a extensão Live Server).
+
+Recursos:
+- Seleção de sala e chamada por texto/voz, quando o navegador suportar.
+- Painel de salas chamadas e progresso.
+- Repetir chamada, limpar painel e reiniciar a lista.
+- Imprimir relatório.
+
+Personalização:
+Edite a lista `rooms` em script.js e as opções do seletor em index.html para adaptar às salas reais.
+Este é um protótipo local: as chamadas não são transmitidas para outros computadores nem salvas em um banco de dados.
